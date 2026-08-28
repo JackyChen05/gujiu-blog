@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { posts, TOPICS } from '../posts.js'
+import { posts, TOPICS, byPostNo } from '../posts.js'
 
 export default function TopicDetail() {
   const { id } = useParams()
@@ -13,7 +13,7 @@ export default function TopicDetail() {
       </div>
     )
   }
-  const list = posts.filter(p => p.topic === id)
+  const list = posts.filter(p => p.topic === id).sort(byPostNo)
   return (
     <div>
       <h1 className="page-title">{topic.name}</h1>

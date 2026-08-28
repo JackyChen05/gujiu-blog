@@ -1,11 +1,21 @@
 import { Link, useSearchParams } from 'react-router-dom'
-import { posts } from '../posts.js'
+import { posts, TOPICS, byPostNo } from '../posts.js'
 
 export default function ArticleList() {
   const [params, setParams] = useSearchParams()
   const tag = params.get('tag')
-  const filtered = tag ? posts.filter(p => p.tags.includes(tag)) : posts
   const allTags = [...new Set(posts.flatMap(p => p.tags))]
+  let filtered
+  if (tag) {
+    filtered = posts.filter(p => p.tags.includes(tag))
+  } else {
+    // 无筛选：按专题分组（注册顺序）、组内按讲次编号升序
+    const topicOrder = Object.keys(TOPICS)
+    filtered = [...posts].sort((a, b) => {
+      const t = topicOrder.indexOf(a.topic) - topicOrder.indexOf(b.topic)
+      return t !== 0 ? t : byPostNo(a, b)
+    })
+  }
   return (
     <div>
       <h1 className="page-title">全部文章</h1>

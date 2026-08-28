@@ -307,3 +307,9 @@ export const posts = [
 export function getPost(slug) {
   return posts.find(p => p.slug === slug)
 }
+
+// 按讲次编号升序（slug 内首个数字串，如 wwg-099 / lxl-07）
+export function byPostNo(a, b) {
+  const n = p => parseInt(p.slug.match(/\d+/)?.[0] || '0', 10)
+  return n(a) - n(b)
+}

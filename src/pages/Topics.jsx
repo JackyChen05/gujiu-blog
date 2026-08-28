@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { posts, TOPICS } from '../posts.js'
+import { posts, TOPICS, byPostNo } from '../posts.js'
 
 export default function Topics() {
   return (
     <div>
       <h1 className="page-title">专题</h1>
       {Object.entries(TOPICS).map(([id, t]) => {
-        const list = posts.filter(p => p.topic === id)
+        const list = posts.filter(p => p.topic === id).sort(byPostNo)
         return (
           <section key={id} className="topic-section">
             <h2 className="section-title">{t.name} <Link to={`/topic/${id}`} className="tag">查看全部 →</Link></h2>
