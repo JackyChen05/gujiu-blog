@@ -1,5 +1,57 @@
 // 文章注册表：新增文章时在 posts/ 下放置 md 文件并在此登记
 import raw000 from './posts/wwg-000-prologue.md?raw'
+import rawLXL01 from './posts/lxl-01-attention.md?raw'
+import rawLXL02 from './posts/lxl-02-pay.md?raw'
+import rawLXL03 from './posts/lxl-03-shackles.md?raw'
+import rawLXL04 from './posts/lxl-04-future.md?raw'
+import rawLXL05 from './posts/lxl-05-mentor.md?raw'
+import rawLXL06 from './posts/lxl-06-capital.md?raw'
+import rawLXL07 from './posts/lxl-07-behind.md?raw'
+import rawLXL08 from './posts/lxl-08-multidimensional.md?raw'
+import rawLXL09 from './posts/lxl-09-metacognition.md?raw'
+import rawLXL10 from './posts/lxl-10-metacognition-training.md?raw'
+import rawLXL11 from './posts/lxl-11-universal-key.md?raw'
+import rawLXL12 from './posts/lxl-12-perseverance.md?raw'
+import rawLXL13 from './posts/lxl-13-missed-upgrade.md?raw'
+import rawLXL14 from './posts/lxl-14-living-world.md?raw'
+import rawLXL15 from './posts/lxl-15-no-complaining.md?raw'
+import rawLXL16 from './posts/lxl-16-see-others-good.md?raw'
+import rawLXL17 from './posts/lxl-17-value-of-right.md?raw'
+import rawLXL18 from './posts/lxl-18-fate.md?raw'
+import rawLXL19 from './posts/lxl-19-self-drive.md?raw'
+import rawLXL20 from './posts/lxl-20-cultivate-just-need.md?raw'
+import rawLXL21 from './posts/lxl-21-avoid-risk.md?raw'
+import rawLXL22 from './posts/lxl-22-capital-scale.md?raw'
+import rawLXL23 from './posts/lxl-23-opportunity.md?raw'
+import rawLXL24 from './posts/lxl-24-invest-condition.md?raw'
+import rawLXL25 from './posts/lxl-25-predict-stock.md?raw'
+import rawLXL26 from './posts/lxl-26-greed-temptation.md?raw'
+import rawLXL27 from './posts/lxl-27-first-mover.md?raw'
+import rawLXL28 from './posts/lxl-28-all-in.md?raw'
+import rawLXL29 from './posts/lxl-29-ding-invest.md?raw'
+import rawLXL30 from './posts/lxl-30-long-term.md?raw'
+import rawLXL31 from './posts/lxl-31-double-salary.md?raw'
+import rawLXL32 from './posts/lxl-32-time-trader.md?raw'
+import rawLXL33 from './posts/lxl-33-writing.md?raw'
+import rawLXL34 from './posts/lxl-34-price.md?raw'
+import rawLXL35 from './posts/lxl-35-choice.md?raw'
+import rawLXL36 from './posts/lxl-36-entrepreneurship.md?raw'
+import rawLXL37 from './posts/lxl-37-growth-rate.md?raw'
+import rawLXL38 from './posts/lxl-38-knowledge.md?raw'
+import rawLXL39 from './posts/lxl-39-iq.md?raw'
+import rawLXL40 from './posts/lxl-40-first-steps.md?raw'
+import rawLXL41 from './posts/lxl-41-hope.md?raw'
+import rawLXL42 from './posts/lxl-42-hope-worthy.md?raw'
+import rawLXL43 from './posts/lxl-43-doing.md?raw'
+import rawLXL44 from './posts/lxl-44-learning-cheat.md?raw'
+import rawLXL45 from './posts/lxl-45-trend.md?raw'
+import rawLXL46 from './posts/lxl-46-mirror-world.md?raw'
+import rawLXL47 from './posts/lxl-47-smart-time-trader.md?raw'
+import rawLXL48 from './posts/lxl-48-best-personal-business-model.md?raw'
+import rawLXL49 from './posts/lxl-49-ultimate-question.md?raw'
+import rawLXL50 from './posts/lxl-50-principles.md?raw'
+import rawLXL51 from './posts/lxl-51-asking.md?raw'
+import rawLXL52 from './posts/lxl-52-execution.md?raw'
 import raw001 from './posts/wwg-001-narrative.md?raw'
 import raw002 from './posts/wwg-002-heavy-tail.md?raw'
 import raw003 from './posts/wwg-003-agency.md?raw'
@@ -98,9 +150,65 @@ export const TOPICS = {
     name: '思维工具',
     desc: '万维钢《现代思维工具课》专题研读：世界观与方法论的结构化笔记。',
   },
+  'wealth-freedom': {
+    name: '财富自由之路',
+    desc: '李笑来专栏研读：注意力、元认知、价值观、投资与个人商业模式——一套完整的财富操作系统。',
+  },
 }
 
 export const posts = [
+  { slug: 'lxl-01-attention', title: '01丨你拥有的最宝贵的财富是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '注意力', '成长'], date: '2017-07-11', excerpt: '注意力 > 时间 > 金钱。三大隐形坑：凑热闹、随大流、操碎别人的心。', raw: rawLXL01 },
+  { slug: 'lxl-02-pay', title: '02丨付费就是捡便宜', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '付费', '时间'], date: '2017-07-12', excerpt: '凡是能用钱买的时间其实都是便宜的。用钱买时间，用时间换注意力。', raw: rawLXL02 },
+  { slug: 'lxl-03-shackles', title: '03丨你人生最重的枷锁是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '安全感', '枷锁'], date: '2017-07-13', excerpt: '追求百分百安全，就是把注意力锁死在永恒的当下。放弃部分安全感，才能获得进步。', raw: rawLXL03 },
+  { slug: 'lxl-04-future', title: '04丨"活在当下"vs"活在未来"', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '活在未来', '预测'], date: '2017-07-14', excerpt: '被困在永恒的当下是噩梦。预测并为之行动，把当下投资给未来。', raw: rawLXL04 },
+  { slug: 'lxl-05-mentor', title: '05丨遇到贵人的科学方法', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '贵人', '求助'], date: '2017-07-15', excerpt: '你不优秀就没有有效的社交。求助是隐蔽的价值交易，是展示自我价值的艺术。', raw: rawLXL05 },
+  { slug: 'lxl-06-capital', title: '06丨你到底有没有资本', topic: 'wealth-freedom', tags: ['财富自由之路', '觉醒起点', '资本', '投资资格'], date: '2017-07-16', excerpt: '有钱不等于有资本。资本 = 金额 × 时限 × 智慧，给投资款判无期徒刑。', raw: rawLXL06 },
+  { slug: 'lxl-07-behind', title: '07丨什么是落后？', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '落后', '危机感'], date: '2017-07-17', excerpt: '过去 40% 之后是落后，现在很可能 1% 之后都是落后。对知识的渴求是害怕落后的恐惧。', raw: rawLXL07 },
+  { slug: 'lxl-08-multidimensional', title: '08丨从平庸走向卓越的最佳策略是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '多维竞争', '跨界'], date: '2017-07-18', excerpt: '单维比长度，多维比面积和体积。至少一个维度突出，再在多个维度叠加。', raw: rawLXL08 },
+  { slug: 'lxl-09-metacognition', title: '09丨你应该拥有的最重要的能力', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '元认知', '思考'], date: '2017-07-19', excerpt: '元认知能力决定每个方面的强弱，财富创造能力最终只与它有关。', raw: rawLXL09 },
+  { slug: 'lxl-10-metacognition-training', title: '10丨如何有效提高元认知能力', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '坐享', '反思'], date: '2017-07-20', excerpt: '三方法：坐享（注意力肌肉训练）、兴趣（主动全神贯注）、反思（日三省身）。', raw: rawLXL10 },
+  { slug: 'lxl-11-universal-key', title: '11丨送给你一把"万能钥匙"', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '万能钥匙', '方法论'], date: '2017-07-21', excerpt: '遇到被锁上的锁头，去别的地方找钥匙。答案永远在问题的上游或侧面。', raw: rawLXL11 },
+  { slug: 'lxl-12-perseverance', title: '12丨为什么你总是"半途而废"？', topic: 'wealth-freedom', tags: ['财富自由之路', '元认知修炼', '坚持', '意义'], date: '2017-07-22', excerpt: '需要坚持才行的基本做不成。赋予意义、罗列代价、社交学习，让你停不下来。', raw: rawLXL12 },
+  { slug: 'lxl-13-missed-upgrade', title: '13丨我是如何错过一次升级的', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '错过', '自证预言'], date: '2017-07-23', excerpt: '感觉没关系是错觉，也是最可怕的自证预言。先假定每个观念都跟你有关。', raw: rawLXL13 },
+  { slug: 'lxl-14-living-world', title: '14丨其实这个世界是有生命的', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '自证预言', '世界'], date: '2017-07-24', excerpt: '你如何对待世界，世界就如何对待你。什么样的人，就生活在什么样的世界。', raw: rawLXL14 },
+  { slug: 'lxl-15-no-complaining', title: '15丨彻底戒掉你的抱怨', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '抱怨', '坚韧'], date: '2017-07-25', excerpt: '能解决就解决是能力，不能解决就承受是坚韧。真爱生命，远离抱怨之人。', raw: rawLXL15 },
+  { slug: 'lxl-16-see-others-good', title: '16丨看得见别人的好才能获得新生', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '心态', '成长'], date: '2017-07-26', excerpt: '人生四阶段，多数人困在二三。证明自己根本不重要，成长才重要。', raw: rawLXL16 },
+  { slug: 'lxl-17-value-of-right', title: '17丨正确本身的价值', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '特立独行', '独立思考'], date: '2017-07-27', excerpt: '正确本身没有价值，特立独行且正确才有。越不被认同，越应该高兴。', raw: rawLXL17 },
+  { slug: 'lxl-18-fate', title: '18丨什么决定你的命运', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '价值观', '选择'], date: '2017-07-28', excerpt: '选择是价值观确定后的自然结果。小心以偏概全——你的世界不等于全世界。', raw: rawLXL18 },
+  { slug: 'lxl-19-self-drive', title: '19丨什么决定你的自我驱动力？', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '刚需', '驱动力'], date: '2017-07-29', excerpt: '正确的刚需是一切驱动力的源头，刚需塑造大脑。优秀是一种习惯。', raw: rawLXL19 },
+  { slug: 'lxl-20-cultivate-just-need', title: '20丨如何认知、选择、培养正确的刚需', topic: 'wealth-freedom', tags: ['财富自由之路', '价值观升级', '刚需', '耐心'], date: '2017-07-30', excerpt: '刚需可主动选择；耐心是关键刚需；现状是过往的积累；选择正确的难受。', raw: rawLXL20 },
+  { slug: 'lxl-21-avoid-risk', title: '21丨投资的刚需是避险', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '避险', '安全'], date: '2017-07-31', excerpt: '行动者把注意力放在避险上而非冒险上。安全第一，成为专家，看傻瓜们冒险。', raw: rawLXL21 },
+  { slug: 'lxl-22-capital-scale', title: '22丨尊重资本量级的差异', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '资本量级', '积蓄'], date: '2017-08-01', excerpt: '了不起的是差异而非人。存 1 万救急钱就超过 60% 成年人。用比例思考。', raw: rawLXL22 },
+  { slug: 'lxl-23-opportunity', title: '23丨你真的没有机会吗？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '机会', '行动力'], date: '2017-08-02', excerpt: '永远别抱怨没机会。看见机会之后还要持续思考 + 基于思考的行动。', raw: rawLXL23 },
+  { slug: 'lxl-24-invest-condition', title: '24丨开始投资活动的条件是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '智慧', '虚拟投资'], date: '2017-08-03', excerpt: '投资最重要的元素是智慧。用 Excel 虚拟投资，每月更新一次，持续 12 个月入门。', raw: rawLXL24 },
+  { slug: 'lxl-25-predict-stock', title: '25丨你能准确预测股价吗？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '预测', '随机漫步'], date: '2017-08-04', excerpt: '短期预测等于抛硬币，长期预测反而容易。时间期限越长越容易预测准确。', raw: rawLXL25 },
+  { slug: 'lxl-26-greed-temptation', title: '26丨我能赚得更多吗？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '贪婪', '长期价值'], date: '2017-08-05', excerpt: '贪婪来自于无知；一切不属于长期价值的东西都是诱惑。追求长期 15%。', raw: rawLXL26 },
+  { slug: 'lxl-27-first-mover', title: '27丨早是不是决定性因素？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '先发优势', '长期'], date: '2017-08-06', excerpt: '先发优势从来不是决定性因素。关键在于对不对，更关键的是是否长期对。', raw: rawLXL27 },
+  { slug: 'lxl-28-all-in', title: '28丨全部押上意味着什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '押上', '凯利公式'], date: '2017-08-07', excerpt: '避开从此再无机会的风险。60% 胜算时最优下注也只有 20%——永远不要押上全部。', raw: rawLXL28 },
+  { slug: 'lxl-29-ding-invest', title: '29丨最简单的安全投资策略是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '定投', '成长型公司'], date: '2017-08-08', excerpt: '定投策略：定期等额购买成长型股票。收益=公司成长性×定投效用。功课在投资前完成。', raw: rawLXL29 },
+  { slug: 'lxl-30-long-term', title: '30丨长期究竟是多长？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资入门', '长期', '72法则'], date: '2017-08-09', excerpt: '你越弱长期越长。能力、策略、场外赚钱都能缩短长期。72 法则算你的长期。', raw: rawLXL30 },
+  { slug: 'lxl-31-double-salary', title: '31丨如何做到两倍薪水？', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '并联', '成长'], date: '2017-08-10', excerpt: '把工作与成长并联：同段时间出售两次，一次给老板换薪水，一次给自己换成长。', raw: rawLXL31 },
+  { slug: 'lxl-32-time-trader', title: '32丨做个正常的时间买卖人', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '时间买卖', '低估'], date: '2017-08-11', excerpt: '价值时而被高估时而被低估是常态。被低估是成长的证明，过分低估就是该自己闯的时候。', raw: rawLXL32 },
+  { slug: 'lxl-33-writing', title: '33丨为什么你一定要学会写作？', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '写作', '一劳永逸'], date: '2017-08-12', excerpt: '写作是把同一段时间重复销售很多次。写对别人有用的东西，是写作的终极技巧。', raw: rawLXL33 },
+  { slug: 'lxl-34-price', title: '34丨究竟是什么在决定你的价格？', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '需求', '价格'], date: '2017-08-13', excerpt: '决定价格的最重要因素是需求。成为世界真正需要的人，挑最被需要的事情做。', raw: rawLXL34 },
+  { slug: 'lxl-35-choice', title: '35丨关于"选择"的方法论', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '选择', '必要条件'], date: '2017-08-14', excerpt: '所谓选择就是添加必要条件。每增加一个条件选项大幅减少，不必要条件让你提前出局。', raw: rawLXL35 },
+  { slug: 'lxl-36-entrepreneurship', title: '36丨关于创业的选择', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '成长率', '创业'], date: '2017-08-15', excerpt: '只有持续提高成长率的生意才是创业。没有成长率的公司不值得风险投资进入。', raw: rawLXL36 },
+  { slug: 'lxl-37-growth-rate', title: '37丨提高成长率的方法论', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '成长率', '二级市场'], date: '2017-08-16', excerpt: '成长率>成长>赚钱>谋生。用二级市场投资成长，用多维竞争力提高个人成长率。', raw: rawLXL37 },
+  { slug: 'lxl-38-knowledge', title: '38丨知识究竟是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '知识', '长期'], date: '2017-08-17', excerpt: '知识=有用×长期。逻辑学/概率论/英语是可繁衍的通识。漫游策略让你融会贯通。', raw: rawLXL38 },
+  { slug: 'lxl-39-iq', title: '39丨如何提高自己的智商？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '智商', '操作系统'], date: '2017-08-18', excerpt: '智商=解决问题的能力=可升级的操作系统。调整关注焦点、从他人角度思考、不断实践。', raw: rawLXL39 },
+  { slug: 'lxl-40-first-steps', title: '40丨起步时，最重要的是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '最少必要知识', '速成'], date: '2017-08-19', excerpt: '速成不可能但快速入门必须。掌握最少必要知识、接受笨拙、关注长期和专注。', raw: rawLXL40 },
+  { slug: 'lxl-41-hope', title: '41丨你的生命中最重要的东西是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '希望', '重复'], date: '2017-08-20', excerpt: '生命中最重要的东西是希望。重复是熟练的唯一通路，正视任务复杂程度，满怀希望。', raw: rawLXL41 },
+  { slug: 'lxl-42-hope-worthy', title: '42丨成为配得上希望的那个人', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '鼓励', '进化'], date: '2017-08-21', excerpt: '进化完成前默默不说。做一只励志的兔子——鼓励是这个世界的稀缺资源。', raw: rawLXL42 },
+  { slug: 'lxl-43-doing', title: '43丨认知升级最重要的工具是什么？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '做到', '认知差异'], date: '2017-08-22', excerpt: '能变现的不是知识而是认知差异。让认知升级的最重要工具是行动中的思考。', raw: rawLXL43 },
+  { slug: 'lxl-44-learning-cheat', title: '44丨你想不想要一个人生的作弊器？', topic: 'wealth-freedom', tags: ['财富自由之路', '认知升级', '学习能力', '外挂'], date: '2017-08-23', excerpt: '学习能力三阶段：手把手教/书本教/没人教。第三阶段成功一次，人生就开挂了。', raw: rawLXL44 },
+  { slug: 'lxl-45-trend', title: '45丨投资世界里的最基本技能——趋势判断', topic: 'wealth-freedom', tags: ['财富自由之路', '投资进阶', '趋势', '周期'], date: '2017-08-24', excerpt: '上升+下降才构成完整周期，真正趋势需多个周期才显现。判断趋势看至少两个周期。', raw: rawLXL45 },
+  { slug: 'lxl-46-mirror-world', title: '46丨投资的世界到底长什么样？', topic: 'wealth-freedom', tags: ['财富自由之路', '投资进阶', '镜像世界', '技能与运气'], date: '2017-08-25', excerpt: '投资世界是镜像世界：更依赖运气而非技能。学会在两个世界间来回穿梭。', raw: rawLXL46 },
+  { slug: 'lxl-49-ultimate-question', title: '49丨人生的终极问题到底是什么', topic: 'wealth-freedom', tags: ['财富自由之路', '终极追问', '什么最重要', '思维武器'], date: '2017-08-28', excerpt: '反复思考什么更重要、什么最重要——一把刀。干一行爱一行，与技能谈恋爱。', raw: rawLXL49 },
+  { slug: 'lxl-50-principles', title: '50丨为什么你在关键时刻总是选错？', topic: 'wealth-freedom', tags: ['财富自由之路', '终极追问', '原则', '达里奥'], date: '2017-08-29', excerpt: '平时不梳理原则关键时刻就选错。有原则比没原则强，系统的原则更强。', raw: rawLXL50 },
+  { slug: 'lxl-51-asking', title: '51丨如何得到满意的好答案？', topic: 'wealth-freedom', tags: ['财富自由之路', '终极追问', '提问', '自学能力'], date: '2017-08-30', excerpt: '想要好答案先要好问题。能搜索的别问人；明确提问目的；让问题方便回答。', raw: rawLXL51 },
+  { slug: 'lxl-52-execution', title: '52丨执行力差的根源究竟在哪里？', topic: 'wealth-freedom', tags: ['财富自由之路', '终极追问', '执行力', '三脑模型'], date: '2017-08-31', excerpt: '黑马直觉/白马情绪/驭手元认知。执行力是想明白的自然结果。完结篇。', raw: rawLXL52 },
+  { slug: 'lxl-47-smart-time-trader', title: '47丨做个精明的时间买卖人', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '刚需', '时间买卖'], date: '2017-08-26', excerpt: '把同一份时间出售很多次，且必须满足消费者以为的刚需。', raw: rawLXL47 },
+  { slug: 'lxl-48-best-personal-business-model', title: '48丨你配得上最好的个人商业模式', topic: 'wealth-freedom', tags: ['财富自由之路', '个人商业模式', '付费', '成长'], date: '2017-08-27', excerpt: '购买他人的时间之后再卖出去。付费才是捡便宜，省下的时间投资到成长。', raw: rawLXL48 },
   { slug: 'wwg-079-legibility-metis', title: '079丨可读性：编户齐民中的米提斯', topic: 'thinking-tools', tags: ['思维工具', '可读性', '米提斯', '社会参与'], date: '2026-06-15', excerpt: '国家为了读社会反而把社会读坏。米提斯不是能进表格的能力，而是知道表格什么时候不够用的能力。', raw: raw079 },
   { slug: 'wwg-080-common-knowledge', title: '080丨共同知识：让众人服从的神器', topic: 'thinking-tools', tags: ['思维工具', '共同知识', '仪式', '社会参与'], date: '2026-06-16', excerpt: '私人知识让你看见真相，共同知识才让你敢于行动。谁掌握了它，谁就握住让一片人同时行动的总开关。', raw: raw080 },
   { slug: 'wwg-081-scapegoat', title: '081丨替罪羊：从"找坏人"到"看系统"', topic: 'thinking-tools', tags: ['思维工具', '替罪羊', '系统思维', '社会参与'], date: '2026-06-17', excerpt: '找替罪羊是人的本能，但看系统也是现代人的本分。用系统思维取代戏曲思维。', raw: raw081 },
