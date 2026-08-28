@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx'
 import ArticleList from './pages/ArticleList.jsx'
 import ArticleDetail from './pages/ArticleDetail.jsx'
 import Topics from './pages/Topics.jsx'
+import TopicDetail from './pages/TopicDetail.jsx'
 import About from './pages/About.jsx'
 import './index.css'
 
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="articles" element={<ArticleList />} />
           <Route path="article/:slug" element={<ArticleDetail />} />
           <Route path="topics" element={<Topics />} />
+          <Route path="topic/:id" element={<TopicDetail />} />
           <Route path="about" element={<About />} />
         </Route>
       </Routes>

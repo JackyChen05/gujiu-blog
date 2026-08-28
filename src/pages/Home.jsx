@@ -15,7 +15,7 @@ export default function Home() {
           {Object.entries(TOPICS).map(([id, t]) => {
             const count = posts.filter(p => p.topic === id).length
             return (
-              <Link to="/topics" key={id} className="topic-card">
+              <Link to={`/topic/${id}`} key={id} className="topic-card">
                 <h3>{t.name}</h3>
                 <p>{t.desc}</p>
                 <span className="topic-count">{count} 篇</span>

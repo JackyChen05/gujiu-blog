@@ -9,7 +9,7 @@ export default function Topics() {
         const list = posts.filter(p => p.topic === id)
         return (
           <section key={id} className="topic-section">
-            <h2 className="section-title">{t.name}</h2>
+            <h2 className="section-title">{t.name} <Link to={`/topic/${id}`} className="tag">查看全部 →</Link></h2>
             <p className="topic-desc">{t.desc}</p>
             <ul className="post-list">
               {list.map(p => (
